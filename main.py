@@ -19,7 +19,7 @@ class IrisInput(BaseModel):
 
 @app.get("/")
 def home():
-    return FileResponse(Path(__file__).parent / "pages/index.html")
+    return FileResponse(Path(__file__).parent / "index.html")
 
 @app.get("/health")
 def health():
