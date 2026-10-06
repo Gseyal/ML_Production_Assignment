@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN useradd -m -u 1000 appuser
 
-COPY --chown=appuser:appuser main.py index.html model.pkl ./
+COPY --chown=appuser:appuser main.py pages/index.html model.pkl ./
 
 USER appuser
 
